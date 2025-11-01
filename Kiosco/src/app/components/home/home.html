@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row g-2">
+    <div *ngFor="let i of productoss" class="col-4">
+      <div class="p-6">
+        <img src="{{ i.img }}" class="card-image-top" alt="{{ i.alt }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ i.nombre }}</h5>
+          <p class="card-text">{{ i.precio }}</p>
+          <button type="button" class="btn btn-action" data-bs-target="#verMas"
+            (click)="verMas(i)">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+        content.</p>
+      <a href="#" class="btn btn-primary">Agregar</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+        content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>

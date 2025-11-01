@@ -1,0 +1,84 @@
+/* Estilos generales */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f8f9fa; /* Fondo claro */
+  
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.navbar-nav .nav-link {
+  color: #343a40;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0d6efd; /* Bootstrap primary blue */
+}
+
+.navbar-nav .dropdown-menu {
+  border-radius: 0.25rem;
+}
+
+/* Main */
+main.flex-fill {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f1f3f5; /* Fondo suave */
+}
+
+/* Footer */
+footer.footer {
+  background-color: #212529;
+  color: #f8f9fa;
+  font-size: 0.9rem;
+}
+
+footer.footer h5, footer.footer h6 {
+  color: #f8f9fa;
+}
+
+footer.footer a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer.footer a:hover {
+  color: #0d6efd;
+}
+
+footer.footer .footer-social i {
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+footer.footer .footer-social:hover i {
+  color: #0d6efd;
+}
+
+footer.footer hr {
+  border-color: rgba(255,255,255,0.2);
+}
+
+footer.footer p {
+  margin: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  footer.footer .row > div {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}

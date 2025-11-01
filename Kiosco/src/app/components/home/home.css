@@ -1,0 +1,53 @@
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-wrap: wrap;          /* Permite que las cards bajen de línea si no hay espacio */
+  justify-content: center;  /* Centra las cards horizontalmente */
+  gap: 2rem;                /* Espacio entre cards */
+  padding: 2rem;            /* Espaciado interno */
+  
+}
+
+/* Tarjetas */
+.card {
+  border: none;                 /* Quitamos borde por defecto */
+  border-radius: 1rem;          /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;             /* Para que las imágenes respeten el borde redondeado */
+}
+
+/* Efecto al pasar el mouse */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Imagen de la card */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;  /* Ajusta la imagen sin deformarla */
+}
+
+/* Títulos y texto */
+.card-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Botón */
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
